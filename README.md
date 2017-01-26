@@ -2,9 +2,14 @@
 
 This python file is to be called by Splunk when there is actionable data, in this case an IP address, that you want auto blocked.  In this example it's creating a txt file that will be hosted via your choice of a dameon and then the firewall(Palo Alto in this case) can pull the file over for blocking.
 
-Context for running the script.
+Context for running the python.
+
+Have splunk alert call the script and pass the IP to python in the following context.
 
 "python3 splunk2pa.py insertIPaddressHere"
+
+You will want to store this script in the following location. 
+$SPLUNK_HOME/bin/scripts
 
 This script could easily be changed to facilitate iptables or other technologies as it fits your enviroment.
 
