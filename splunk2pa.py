@@ -17,6 +17,8 @@ import ipaddress
 
 
 
+var = alasjdfljkasdflkjsad
+
 #put the name of your output file below
 outputfile = "splunk2paBlock.txt"
 
